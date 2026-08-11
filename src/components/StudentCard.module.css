@@ -1,40 +1,85 @@
 .card {
-  background-color: #ffffff;
-  border: 1px solid #d9d9d9;
-  border-radius: 8px;
-  padding: 16px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  min-width: 220px;
+  background-color: #1a1d23;
+  border: 1px solid #2b2f38;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.card h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.1rem;
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
 }
 
-.card p {
-  margin: 4px 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2b2f38;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f3f4f6;
+}
+
+.course {
+  margin: 2px 0 0 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9ca3af;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
   font-size: 0.9rem;
-  color: #333333;
+}
+
+.label {
+  color: #6b7280;
+}
+
+.value {
+  color: #e5e7eb;
+  font-weight: 600;
 }
 
 .badge {
   display: inline-block;
-  margin-top: 10px;
-  padding: 4px 10px;
-  background-color: #ffd54f;
-  color: #4a3600;
-  font-size: 0.8rem;
-  font-weight: bold;
-  border-radius: 12px;
+  margin-top: 14px;
+  padding: 5px 12px;
+  background-color: #3f2f0a;
+  color: #fbbf24;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 20px;
+  border: 1px solid #78530f;
 }
 
 .probation {
-  border: 2px solid #d32f2f;
-  background-color: #fdecea;
+  border: 1.5px solid #ef4444;
+  background-color: #2a1516;
 }
 
-.probation p {
-  color: #b71c1c;
-  font-weight: bold;
+.probation .header {
+  border-bottom-color: #4c1d1d;
+}
+
+.probation .value {
+  color: #f87171;
 }
