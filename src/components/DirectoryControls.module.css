@@ -1,0 +1,41 @@
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 24px auto;
+    padding: 0 24px;
+  }
+  .search {
+    flex: 1;
+    min-width: 200px;
+    padding: 5px 14px;
+    background-color: #1a1d23;
+    border: 1px solid #2b2f38;
+    border-radius: 8px;
+    color: #e5e7eb;
+    font-size: 0.9rem;
+  }
+  
+  .search:focus {
+    outline: none;
+    border-color: #3f2f0a;
+  }
+  
+  .filterButton {
+    padding: 8px 16px;
+    background-color: #1a1d23;
+    border: 1px solid #2b2f38;
+    border-radius: 8px;
+    color: #9ca3af;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .activeFilter {
+    background-color: #3f2f0a;
+    color: #fbbf24;
+    border-color: #78530f;
+  }

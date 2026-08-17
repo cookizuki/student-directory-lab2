@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1100px;
+    margin: 32px auto 0 auto;
+    padding: 0 24px;
+  }
+  
+  .input {
+    padding: 10px 14px;
+    background-color: #1a1d23;
+    border: 1px solid #2b2f38;
+    border-radius: 8px;
+    color: #e5e7eb;
+    font-size: 0.9rem;
+  }
+  
+  .submitButton {
+    padding: 10px 18px;
+    background-color: #fbbf24;
+    border: none;
+    border-radius: 8px;
+    color: #1a1d23;
+    font-weight: 700;
+    cursor: pointer;
+  }
